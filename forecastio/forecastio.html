@@ -1,0 +1,76 @@
+
+<div> 
+
+	<div>
+    <p>
+      <a class="temp" data-bind="current.temperature | append '&deg;' | raw"></a>  
+      
+      <img class="current-icon" data-bind-src="current_icon">
+      
+      <!--svg width="100" height="100" style="border: 2px solid #aaaaaa;">
+      	<image fill="white" width="100" height="100" xlink:href="/assets/climacons/svg/Sun.svg"/>
+      </svg-->
+      
+      <!--img src="/assets/climacons/svg/Sun.svg"-->
+    </p>
+	
+	<div class="summary" style="padding: 10px; margin-top: -10px;text-align:left">
+		<span style="text-align:left">
+		<a>L: </a>
+		<a data-bind="today.low | append '&deg;' | raw"></a>
+		<a> | </a>
+		<a>H: </a>
+		<a data-bind="today.high | append '&deg;' | raw"></a>
+		</span>
+	</div>
+	<div class="summary" style="text-align:right;margin-top:-50px">
+		<span><a data-bind="current.summary | raw"></a></span>
+	</div>
+      
+ 	</div>
+
+
+	<div>
+      <p>
+      <span class="current-info">
+        <img class="img-summary" src="/assets/climacons/svg/Sunrise.svg"><a data-bind="today.sunrise"></a>
+        <img class="img-summary" src="/assets/climacons/svg/Sunset.svg"><a data-bind="today.sunset"></a>
+      </span>
+      </p>
+		<span class="current-info-2">
+			<img class="img-summary" src="/assets/climacons/svg/Cloud-Fog-Alt.svg"> 
+			<a data-bind="current.humidity | raw"></a>
+			<img class="img-summary" src="/assets/climacons/svg/Wind.svg">
+			<a data-bind="current.wind_speed | raw"></a> mph
+			<img class="img-summary" data-bind-src="wind_bearing">
+		</span>
+	</div>
+
+</div>
+
+<div class="divider-line" style="position:absolute;top:215px;"></div>
+
+<div>
+	<table class="table-start">
+	<tr>
+	<td data-foreach-day="this_week">
+	  	<div class="day">
+			<p data-bind="day.time"></p>
+			<img class="weather-icon-inline" data-bind-src="day.icon">
+			<p class="day">
+				<p class="day" data-bind="day.min_temp | raw"></p>
+				<p class="day" data-bind="day.max_temp | raw"></p>
+			</p>
+      </div>
+    </td>
+    </tr>
+	</table>
+
+	<p class="last-updated">
+      <span>Last updated: </span>
+      <span data-bind="last_updated"></span>
+	</p>
+
+</div>
+
+

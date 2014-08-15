@@ -1,0 +1,31 @@
+
+<div class="post-container">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<p style="position:absolute;top:-0px;text-align:left">
+		<i class="fa fa-rss"></i>
+		Arstechnica
+	</p>
+	
+	<div class="rss-menu" >
+		<span class="rss-heading">RSS Titles</span>
+		<br>
+		<div data-foreach-p='postskw'>
+		<a class="rss-number" data-bind="p.id"></a>
+		<p class="rss-title" data-bind="p.title | raw"></p>
+		</div>
+	</div>
+
+	<div class="rss-content">
+		<p class="rss-current-title" data-bind="current_post.title | raw"></p>
+		<span class="rss-posted-info">
+			<a data-bind="current_post.id | raw"></a>
+			of <a data-bind="current_post.num | raw"></a>
+			posted on
+			<a data-bind="current_post.published | raw"></a>
+		</span>
+		<div class="rss-divider-line"></div>
+		<div class="summary" data-bind="current_post.summary | raw"></div>
+	</div>
+
+</div>

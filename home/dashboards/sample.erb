@@ -1,0 +1,136 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  //Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]')
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 5
+});
+</script>
+
+<% content_for :title do %>My super sweet dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <!--
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="synergy" data-view="Meter" data-title="Synergy" data-min="0" data-max="100"></div>
+    </li>
+    -->
+    
+	<!--
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
+    </li>
+	-->
+	<!--
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+		<div data-id="camera1" data-view="Cameras" data-title="Camera1 Label"></div>
+	</li>
+	-->
+	<!--
+	<li data-row="1" data-col="1" data-sizex="3" data-sizey="3">
+	  <div data-id='facebook_posts' data-view='FacebookPosts' data-title='Facebook Info'></div>
+	</li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$"></div>
+    </li>
+	-->
+	<!--
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
+    </li>
+    -->
+	<!-- doesn't work
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="Image" data-view="Image" data-title="image" style="background-color:#ff9618"></div>
+    </li>
+	-->
+	<!--    
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+	  <div data-id="news" data-view="News" style="background-color:#999999"></div>
+	</li>
+	-->
+	<!--li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="seattle-times" data-view="News2" data-title="CNN" headline-image="http://pbs.twimg.com/profile_images/2215576731/ars-logo_400x400.png" data-interval="10"></div>
+    </li>
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ars2" data-view="News2" data-title="Arstechnica" data-interval="10"></div>
+    </li>
+	-->
+	<li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="picture" data-view="BigImage" data-image="http://192.168.1.152/video.cgi"
+        style="background-color:#555555;"
+        data-max="true"
+      ></div>
+    </li>
+
+    <!--
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+    -->
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+    
+    <!--
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-view="Log" data-id="log" data-value="log file"></div>
+    </li>
+    -->
+    
+    <!--
+    <div data-id="picture" data-view="BigImage" data-image="http://cdn1.wickedweasel.com/assets/images/buy_page_main_images/0101/9130/612_cheeky_faith.jpg?1398988630">
+    -->
+    
+    <!--
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">                
+      <div data-id="verbinski" data-view="Verbinski"></div>                     
+    </li>
+    -->
+    
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">                
+      <div data-id="forecastio" data-view="Forecastio"></div>                     
+    </li>
+
+    <!--
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/logo.png"></div>
+    </li>
+    -->
+    
+    <!--
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="rss" data-view="RSS" data-interval="10"></div>
+    </li>
+    -->
+    
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="netscan" data-view="Netscan" data-interval="10"></div>
+    </li>
+    
+    <!--
+    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" 
+      	data-title="Hello" data-text="This is your shiny new 1080p dashboard." 
+      	data-moreinfo="Protip: You can drag the widgets around!" 
+      	style="background-color:#555555;">
+	</div>
+    </li>
+    -->
+	<!--
+    <li data-row="3" data-col="1" data-sizex="3" data-sizey="1">
+      <div data-id="map" data-view="Map" data-title="Map" data-type="heat" data-color="#222222"></div>
+    </li>
+    -->
+	
+  </ul>
+  <!--center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center-->
+  <!--img src="http://192.168.1.152/video.cgi" width="160" height="120"/-->
+</div>

@@ -1,0 +1,92 @@
+$bg-color: #555555; //#3399ff; 
+$title-color: #aaaaaa;
+$title-bg-color: #aaaaaa;
+$rss-text-color: #eeeeee;
+$heading-color: #cccccc;
+$rss-text-super-small: 0.5em;
+$rss-text-small: 0.75em;
+$rss-text-medium: 0.9em;
+$rss-text-large: 1.2em;
+
+.widget-rss {
+
+    background-color: $bg-color;
+    color: $rss-text-color;
+
+    .post-container {
+		height: 280px;
+		//clip: rect(0px,600px,300px,0px);
+    }
+    
+    .rss-heading {
+        color: $heading-color;
+        margin-top: -1.5em;
+        margin-bottom: 0.5em;
+        font-size: $rss-text-medium;
+		margin-top: 200px;
+    }
+    
+    .rss-summary {
+		text-align: left;
+		font-size: $rss-text-small;
+		color: $rss-text-color;
+	}
+	
+	.rss-title {
+		text-align: left;
+		font-size: $rss-text-small;
+		color: $rss-text-color;
+		padding: 5px;
+		margin-left: 20px;
+		margin-top:-25px;
+		margin-right: 20px;
+		line-height: 1.2em; 
+		//background-color:$title-bg-color;
+		//border-radius: 10px;
+		//border-top: 1px solid $rss-text-color;
+		border-bottom: 1px solid $rss-text-color;
+		border-right: 1px solid $rss-text-color;
+		//border-bottom-right-radius: 20px;
+		//border-top-right-radius: 20px;
+	}
+	.rss-current-title {
+		text-align: left;
+		font-size: $rss-text-large;
+		color: $heading-color;
+	}
+	
+	.rss-number {
+		text-align: left;
+		//width: 100px;
+		font-size: $rss-text-medium;
+		color: $rss-text-color;
+	}
+	
+	.rss-menu {
+		text-align: left;
+		font-size: $rss-text-medium;
+		height: 100%;
+		width: 40%;
+		float: left;
+		overflow: hidden;
+	}
+	
+	.rss-content {
+		height: 100%;
+		width: 60%;
+		float: left;
+		font-size: $rss-text-small;
+		overflow: hidden;
+		text-align: left;
+	}
+	
+	.rss-posted-info {
+        color: $heading-color;
+        font-size: $rss-text-small;
+	}
+	
+	.rss-divider-line {
+		border-bottom:1px solid $rss-text-color;
+		width:95%;
+	}
+}

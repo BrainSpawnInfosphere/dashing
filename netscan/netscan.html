@@ -1,0 +1,21 @@
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="header">
+	<i class="fa fa-cloud"></i>
+	<span data-bind="networkname"></span>
+	updated:
+	<span data-bind="updateTime"></span>
+	<div class="rss-divider-line"></div>
+</div>
+
+<div>
+	<table class="ip-device" data-foreach-ip="network" style="text-align:left">
+		<tr style="width:100%">
+		<td><i data-bind-class="ip.status"></i></td>
+		<td data-bind="ip.hostname"></td>
+		<td data-bind="ip.ip"></td>
+		<td data-bind="ip.hw"></td>
+		<td data-bind="ip.vendor"></td>
+		</tr>
+	</table>
+</div>

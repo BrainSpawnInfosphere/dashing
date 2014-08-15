@@ -1,0 +1,92 @@
+$bg-color: #555555;
+$medium-txt: 1.0em;
+$small-txt: 0.8em;
+$super-small-txt: 0.5em;
+$text-color: #eeeeee;
+
+.widget-forecastio {
+
+    background-color: $bg-color;
+    
+  // Daily icon
+  .weather-icon-inline {
+	max-width: 60px;
+	margin: -10px;
+  }
+  
+  // Weather icon now
+  .current-icon {
+	//width: 200px;
+	margin-top: -40%;
+	margin-bottom: -20%;
+  }
+  
+  // Large current temp
+  .temp {
+  	font-size: 125px;
+  	font-style: bold;
+	color: $text-color;
+	line-height: 60px;
+	padding: 20px;
+  }
+  
+  .summary {
+  	font-size: $medium-txt;
+	padding: 10px;
+	color: $text-color;
+	position: relative;
+	top: 0px;
+  }
+  
+  .last-updated {
+	font-size: $super-small-txt;
+	color: #aaaaaa;
+	background-color: #333333;
+	position: relative;
+	top: 30px;
+  }
+  
+  .day {
+  	width: 60px;
+  	font-size: $small-txt;
+  	color: $text-color; 
+  	padding: 0px;
+  	//border-left: 2px solid #ffffff;
+  	//border-right: 2px solid #ffffff;
+ 	//border-radius: 5px;
+ 	//background: #dddddd;
+ 	//border: 2px solid #555555;
+
+  }
+  
+  .table-start {
+	position: absolute;
+	top: 220px;
+  }
+  
+  .current-info {
+	color: $text-color;
+	margin-bottom: -30%;
+	font-size: $small-txt;
+	position: relative;
+	top: -20px;
+  }
+  
+  .current-info-2 {
+	color: $text-color;
+	font-size: $small-txt;
+	position: relative;
+	top: -60px;
+  }
+  
+  .img-summary {
+  	height: 70px;
+  }
+  
+  .divider-line {
+  	border-bottom:1px solid $text-color;
+  	width:90%;
+  }
+
+}
+

@@ -1,0 +1,28 @@
+$bg-color: #777777;
+$text-color: #cccccc;
+$text-super-small: 0.6em;
+$text-small: 0.8em;
+$text-medium: 1.0em;
+
+.widget-netscan {
+	background-color: $bg-color;
+	color: $text-color;
+	font-size: $text-medium;
+	
+	.header {
+		text-align: left;
+		position: absolute;
+		top: 10px;
+	}
+	
+	.rss-divider-line {
+		border-bottom:1px solid $text-color;
+		width:350px;
+	}
+	
+	.ip-device {
+		text-align: left;
+		font-size: $text-super-small;
+		width: 100%;
+	}
+}
