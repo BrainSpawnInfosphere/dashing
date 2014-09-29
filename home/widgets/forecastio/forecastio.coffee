@@ -1,1 +1,1 @@
-../../../forecastio/forecastio.coffee
+/Users/kevin/github/dashing/forecastio/forecastio.coffee

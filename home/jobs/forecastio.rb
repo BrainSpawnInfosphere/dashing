@@ -1,1 +1,1 @@
-../../forecastio/forecastio.rb
+/Users/kevin/github/dashing/forecastio/forecastio.rb

@@ -1,1 +1,1 @@
-../../../netscan/netscan.coffee
+/Users/kevin/github/dashing/netscan/netscan.coffee
