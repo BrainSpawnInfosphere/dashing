@@ -1,1 +1,1 @@
-/Users/kevin/github/dashing/netscan/netscan.rb
+../../netscan/netscan.rb

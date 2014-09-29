@@ -1,13 +1,15 @@
-require 'date'
+#require 'date'
 require 'net/https'
 require 'json'
 
 # Forecast API Key from https://developer.forecast.io
-forecast_api_key = ENV['FORECAST_API_KEY'] 
+forecast_api_key = '28bdf86a6c139b840267bde8c3357210'
+
+puts 'API key: ' + forecast_api_key
 
 # Latitude, Longitude for location
-forecast_location_lat = ENV['LATITUDE'] 
-forecast_location_long = ENV['LONGITUDE'] 
+forecast_location_lat = '38.981875'
+forecast_location_long = '-104.780171' 
 
 
 # Unit Format
@@ -32,7 +34,7 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
   http = Net::HTTP.new("api.forecast.io", 443)
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_PEER
-  response = http.request(Net::HTTP::Get.new("/forecast/#{forecast_api_key}/#{forecast_location_lat},#{forecast_location_long}?units=#{forecast_units}"))
+  response = http.request(Net::HTTP::Get.new("/forecast/#{forecast_api_key}/#{forecast_location_lat},#{forecast_location_long}"))
   forecast = JSON.parse(response.body)  
 
   currently = forecast["currently"]
